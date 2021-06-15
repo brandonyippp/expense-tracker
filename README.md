@@ -8,41 +8,44 @@
 
 ## Usage
 
-- Create a .env file expense-tracker/server with lines similar to the provided .env.example file.
+- !!! Type 'npm install' in both expense-tracker/server and expense-tracker/client to install any needed dependencies !!!
 
-  - Client-side (located in expense-tracker/client) is set to run on PORT: 3000
-  - Server-side is set to run on PORT: 5000 or whichever port specified in the newly-created (by you!) .env file, assigned as PORT = <Your desired PORT here>
+- Create a .env file in expense-tracker/server with lines similar to the provided .env.example file (refer to *** INFORMATION REGARDING .env FILE *** below)
 
 - Given that this application also uses MongoDB (specifically Cloud Atlas) as its respective database, you will have to either:
 
   - Create a new account: https://account.mongodb.com/account/register
   - Login to a pre-existing account: https://account.mongodb.com/account/login
 
-- Once you have created a MongoDB account, proceed to:
+  - Once you have a MongoDB account, proceed to:
 
-  - Create a Cluster (free is fine) and wait for it to finish creating
-  - Click (under the SECURITY tab on the left-hand side) Database Access
+    - Create a Cluster (free is fine) and wait for it to finish creating (assuming you don't have one created already)
 
-    - Add a new user by clicking the button on the right-most side
-      - Enter a username ((e.g.) firstName-lastName_root) and password
-      - Ensure that the user is able to Read and write to any database
+    - Click (under the SECURITY tab on the left-hand side) Database Access
 
-  - Click (under the same SECURITY tab) Network Access
+      - Add a new user by clicking the 'ADD NEW DATABASE USER' button on the rightmost side
+        - Enter a username ((e.g.) firstName-lastName_root) and password (auto-generated recommended)
+        - Ensure that 'Read and write to any database' is selected from the menu for user permissions
 
-    - Add a new IP address by clicking the button on the right-most side
-      - Click the Add Current IP Address button and click Confirm
+    - Click (under the same SECURITY tab) Network Access
 
-  - Return to the Clusters tab and click CONNECT under the Cluster name
-    - Proceed with the Connect your application option
-      - Copy paste the provided connection string
-        - Replace <password> with the password from above steps (no '<' and/or '>')
-          - Paste this connection string into your .env file as follows:
-            CONNECTION_URL = <connection string> (Don't include '<' and/or '>')
+      - Add a new IP address by clicking the 'ADD IP ADDRESS' button on the rightmost side
+        - Click the Add Current IP Address button and click Confirm
+
+    *** INFORMATION REGARDING .env FILE ***
+    - Return to the Clusters tab and click the 'CONNECT' button under the Cluster name
+      - Proceed with the 'Connect your application' option
+        - Copy the provided connection string
+          - Replace <password> with the password from above steps (don't include '<' or '>')
+            - Paste this connection string into your .env file as follows:
+              CONNECTION_URL = <connection string> (don't include '<' or '>')
+              - PASTE 'PORT = 5000' as well on a new line into the .env file (or whichever PORT you prefer, so long as it's different from the PORT that the front-end is running on)
+
+  - Client-side (located in expense-tracker/client) is set to run on PORT: 3000
+  - Server-side is set to run on PORT: 5000 or whichever port specified in the newly-created (by you!) .env file, assigned as PORT = <Your desired PORT here>
 
 - With all of that setup, you're now ready to use the expense-tracker! Load up http://localhost:3000/ (or whichever PORT you've assigned) to begin using the application.
   - Type 'npm start' for both expense-tracker/client and expense-tracker/server to load both front-end and back-end. You're now good to go!
-  - Make sure that express is installed -- 'npm install express'
-  -!!! Type 'npm install' in both expense-tracker/server and expense-tracker/client to install any needed dependencies !!!
 
 ## Used Dependencies
 
