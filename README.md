@@ -41,6 +41,7 @@
 
 - With all of that setup, you're now ready to use the expense-tracker! Load up http://localhost:3000/ (or whichever PORT you've assigned) to begin using the application.
   - Type 'npm start' for both expense-tracker/client and expense-tracker/server to load both front-end and back-end. You're now good to go!
+  - Make sure that express is installed -- 'npm install express'
   -!!! Type 'npm install' in both expense-tracker/server and expense-tracker/client to install any needed dependencies !!!
 
 ## Used Dependencies
