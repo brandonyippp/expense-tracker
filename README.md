@@ -53,7 +53,7 @@
           - Replace <password> with the password from above steps (don't include '<' or '>')
             - Paste this connection string into your .env file as follows:
               CONNECTION_URL = <connection string> (don't include '<' or '>')
-              - PASTE 'PORT = 5000' as well on a new line into the .env file (or whichever PORT you prefer, so long as it's different from the PORT that the front-end is running on)
+              - PASTE 'PORT = 5000' on a new line into the .env file (or whichever PORT you prefer, so long as it's different from the PORT that the front-end is running on)
 
   - Client-side (located in expense-tracker/client) is set to run on PORT: 3000
   - Server-side is set to run on PORT: 5000 or whichever port specified in the newly-created (by you!) .env file, assigned as PORT = <Your desired PORT here>
