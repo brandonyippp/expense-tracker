@@ -1,0 +1,10 @@
+export const CAR = 'Car';
+export const EDUCATION = 'Education';
+export const ENTERTAINMENT = 'Entertainment';
+export const BUSINESS = 'Business';
+export const HEALTH = 'Health';
+export const HOUSING = 'Housing';
+export const TRAVEL = 'Travel';
+export const FOOD = 'Food';
+export const UTILITIES = 'Utilities';
+export const OTHER = 'Other';
