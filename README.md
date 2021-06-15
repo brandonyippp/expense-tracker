@@ -10,7 +10,11 @@
 
 - !!! Type 'npm install' in both expense-tracker/server and expense-tracker/client to install any needed dependencies !!!
 
+<<<<<<< HEAD
 - Create a .env file in expense-tracker/server with lines similar to the provided .env.example file (refer to **_ INFORMATION REGARDING .env FILE _** below)
+=======
+- Create a .env file in expense-tracker/server with lines similar to the provided .env.example file (refer to *** INFORMATION REGARDING .env FILE *** below)
+>>>>>>> 403af7d7b422832589cf63621011feaa5524151d
 
 - Given that this application also uses MongoDB (specifically Cloud Atlas) as its respective database, you will have to either:
 
@@ -20,6 +24,7 @@
   - Once you have a MongoDB account, proceed to:
 
     - Create a Cluster (free is fine) and wait for it to finish creating (assuming you don't have one created already)
+<<<<<<< HEAD
 
     - Click (under the SECURITY tab on the left-hand side) Database Access
 
@@ -34,6 +39,21 @@
 
     **_ INFORMATION REGARDING .env FILE _**
 
+=======
+
+    - Click (under the SECURITY tab on the left-hand side) Database Access
+
+      - Add a new user by clicking the 'ADD NEW DATABASE USER' button on the rightmost side
+        - Enter a username ((e.g.) firstName-lastName_root) and password (auto-generated recommended)
+        - Ensure that 'Read and write to any database' is selected from the menu for user permissions
+
+    - Click (under the same SECURITY tab) Network Access
+
+      - Add a new IP address by clicking the 'ADD IP ADDRESS' button on the rightmost side
+        - Click the Add Current IP Address button and click Confirm
+
+    *** INFORMATION REGARDING .env FILE ***
+>>>>>>> 403af7d7b422832589cf63621011feaa5524151d
     - Return to the Clusters tab and click the 'CONNECT' button under the Cluster name
       - Proceed with the 'Connect your application' option
         - Copy the provided connection string
