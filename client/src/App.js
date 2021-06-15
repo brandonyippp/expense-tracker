@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CreateExpenseButton from './components/Expense/CreateExpense/CreateExpenseUI.js';
+import { getURL } from './constants/RequestEndpoints';
 import PieDataChart from './components/Expense/PieDataChart';
 import ExpenseList from './components/Expense/ExpenseList';
 import axios from 'axios';
@@ -54,7 +55,7 @@ function App() {
 
   useEffect(() => {
     const getExpenses = async () => {
-      const res = await axios.get('http://localhost:5000/api/expenses');
+      const res = await axios.get(getURL);
       setExpenses(res.data);
       setExpenseLength(res.data.length);
     }
