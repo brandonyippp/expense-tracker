@@ -40,6 +40,7 @@
             CONNECTION_URL = <connection string> (Don't include '<' and/or '>')
 
 - With all of that setup, you're now ready to use the expense-tracker! Load up http://localhost:3000/ (or whichever PORT you've assigned) to begin using the application.
+  - Type 'npm start' for both expense-tracker/client and expense-tracker/server to load both front-end and back-end. You're now good to go!
 
 ## Used Dependencies
 
